@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a class="links" id="Title" href="">Portfólio</a>
+        </div>
+        <div class="right">
+            <a class="links" data-alvo="About">Sobre Mim</a>
+            <a href="" class="links" data-alvo="Skills">Skills</a>
+            <a href="" class="links">Projetos</a>
+            <a class="links" data-alvo="Contact">Contato</a>
+        </div>
+    </nav>
+    <header>
+        <div id="header-content">
+            <h1>Bem-vindo ao meu Portfólio!</h1>
+            <p>Olá! Meu nome é Gustavo e este é o meu portfólio pessoal. Criei este site para compartilhar meus projetos, habilidades e experiências com você. Aqui você encontrará uma seleção das minhas principais habilidades e dos meus trabalhos mais recentes, que destacam minha experiência e paixão pela programação Front-End.</p>
+            <p>Este portfólio é uma oportunidade para mostrar minha capacidade de criar interfaces atraentes e funcionais, e espero que ele ofereça uma visão clara do meu trabalho e das minhas habilidades. Navegue pelos meus projetos e, se tiver alguma dúvida ou quiser discutir uma oportunidade, não hesite em me contatar através da seção "Contato".</p>
+        </div>
+        <a href="#About" class="btn" id="btnGo" data-alvo="About">Vamos lá?  :D</a>
+    </header>
+    <section id="About">
+        <div style="padding: 20px;"><img src="img/Screenshot_3.png" alt="Me" id="imgMe"></div>
+        <div id="TextAbout">
+            <h2>Sobre Mim</h2>
+            <p>Olá, meu nome é Gustavo Luiz Conceição Zago, tenho 23 anos, sou natural de Batatais - SP mas atualmente estou morando em Cornélio Procópio - PR por conta da minha faculdade</p>
+            <p>Em se falando nela, sou estudante do 5º período de Engenharia de Computação na UTFPR (Universidade Tecnológica Federal do Paraná) campus Cornélio Procópio. Meu Ingresso se deu em 2020 e minha formatura prevista é para o final de 2025</p>
+            <p>Durante a minha vida acadêmica, me apaixonei pela programação Front-End e desde então venho estudando e me especializando para poder seguir carreira na área</p>
+            <p>Para isso, ingressei na Unect Jr (a qual eu sou muito grato), uma empresa júnior com o foco em desenvolvimento web, mobile e de sistemas da minha universidade. Lá, eu exerço a função de assessor da diretoria de desenvolvimento justamente na área de Front-End</p>
+        </div>
+    </section>
+    <section id="Skills">
+        <div id="SkillsWrapper">
+            <h2>Minhas Principais Habilidades</h2>
+        <div id="Lista">
+            <div id="HardSkills">
+                <div class="item">
+                    <p>HTML - 80%</p>
+                    <div class="Borda"><div id="html"></div></div>
+                </div>
+                <div class="item">
+                    <p>CSS - 60%</p>
+                    <div class="Borda"><div id="css"></div></div>
+                </div>
+                <div class="item">
+                    <p>JavaScript - 73%</p>
+                    <div class="Borda"><div id="js"></div></div>
+                </div>
+                <div class="item">
+                    <p>ReactJS - 60%</p>
+                    <div class="Borda"><div id="reac"></div></div>
+                </div>
+                <div class="item">
+                    <p>React Native - 55%</p>
+                    <div class="Borda"><div id="reacn"></div></div>
+                </div>
+                <div class="item">
+                    <p>VueJs - 40%</p>
+                    <div class="Borda"><div id="vue"></div></div>
+                </div>
+                <div class="item">
+                    <p>AngularJS - 40%</p>
+                    <div class="Borda"><div id="ang"></div></div>
+                </div>
+
+            </div>
+            <div id="SoftSkills">
+                <div class="item">
+                    <p>Comunicação - 60%</p>
+                    <div class="Borda"><div id="com"></div></div>
+                </div>
+                <div class="item">
+                    <p>Agilidade - 80%</p>
+                    <div class="Borda"><div id="ag"></div></div>
+                </div>
+                <div class="item">
+                    <p>Gestão de Tempo - 65%</p>
+                    <div class="Borda"><div id="temp"></div></div>
+                </div>
+                <div class="item">
+                    <p>Adaptabilidade - 70%</p>
+                    <div class="Borda"><div id="adap"></div></div>
+                </div>
+                <div class="item">
+                    <p>Trabalho em Equipe - 75%</p>
+                    <div class="Borda"><div id="tw"></div></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <div id="ContactWrapper">
+            <div id="ContainerTextContact">
+                <h2>Contato</h2>
+                <i>Ficarei muito feliz em entrar em contato com você e espero que possamos nos ver em breve!! </i>
+                <div id="Icons">
+                    <a href="https://www.facebook.com/gustavo.zago.961/" target="_blank">
+                        <img src="img/icons/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://github.com/ZagoXD" target="_blank">
+                        <img src="img/icons/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.instagram.com/guzago15/" target="_blank">
+                        <img src="img/icons/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gustavo-zago-2a2066265/" target="_blank">
+                        <img src="img/icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/skyziinxd@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required> <br>
+                <input type="text" name="_subject" placeholder="Titulo Email" required> <br>
+                <input type="email" name="email" placeholder="Email" required> <br>
+                <input type="hidden" name="_captcha" value="false">
+                <textarea name="message" placeholder="Mensagem"></textarea> <br>
+                <button type="submit" class="btn" id="btnEnviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script>
+    // Script para rolar pagina
+    $(".links, #btnGo").click(function(event) {
+        event.preventDefault(); 
+        var target = $(this).data("alvo");
+        $('html, body').animate({
+            scrollTop: $("#" + target).offset().top
+        }, 800);
+    });
+</script>
+</html>

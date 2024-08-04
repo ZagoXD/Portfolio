@@ -1,0 +1,338 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #03346E;
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 5px 20px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: #021526;
+}
+
+nav .left, nav .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .left {
+    width: 40%;
+    justify-content: center;
+}
+
+nav .right {
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+nav .right a:hover {
+    font-size: 22px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links {
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+    transition: font-size 0.2s;
+}
+
+#Title {
+    font-size: 30px;
+}
+
+header {
+    width: 100%;
+    height: 93vh;
+    background-image: url('img/bk.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 50px;
+}
+
+#btnGo {
+    color: white;
+    background-color: #03346E;
+    border: 2px solid gray;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-top: 7%;
+}
+
+#btnGo:hover {
+    background-color: #021526;
+    border-color: white;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 70px;
+}
+
+header p {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+#header-content{
+    width: 80%;
+    height: auto;
+    background-color: #032753;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 25px rgba(226, 226, 182, 1);
+}
+
+#About{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#imgMe{
+    border-radius: 300px;
+    box-shadow: 0px 0px 25px white;
+}
+
+#TextAbout{
+    background-color: #021526;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 45%;
+    padding: 15px;
+}
+
+#TextAbout p{
+    font-size: 20px;
+}
+
+#Skills{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Skills h2{
+    color: white;
+}
+
+#Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#ContactWrapper {
+    background-color: #021526;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+#ContainerTextContact {
+    color: white;
+    width: 450px;
+    height: auto;
+    i {
+        font-size: 25px;
+    }
+}
+
+#Icons {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+form {
+    text-align: center;
+    input, textarea {
+        padding: 8px;
+        width: 340px;
+        font-size: 23px;
+        border-radius: 10px;
+        margin: 10px;
+        color: white;
+        background-color: #03346E;
+        border: 2px solid gray;
+    }
+    textarea {
+        height: 180px;
+    }
+    input::placeholder, 
+    textarea::placeholder {
+        color: white;
+    }
+}
+
+#btnEnviar{
+    color: white;
+    font-size: 20px;
+    background-color: #03346E;
+    border: 2px solid gray;
+}
+
+#Lista{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#SkillsWrapper{
+    text-align: center;
+    width: 90%;
+    background-color: #021526;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.item{
+    margin: 20px;
+}
+
+.item p{
+    margin: 4px;
+    color: white;
+}
+
+.Borda{
+    width: 180px;
+    height: 15px;
+    border-radius: 5px;
+    border: 2px solid #E2E2B6;
+}
+
+#html{
+    width: 80%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#css{
+    width: 60%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#js{
+    width: 73%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#reac{
+    width: 60%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#reacn{
+    width: 55%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#vue{
+    width: 40%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#ang{
+    width: 40%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#com{
+    width: 60%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#ag{
+    width: 80%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#temp{
+    width: 65%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#adap{
+    width: 70%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#tw{
+    width: 75%;
+    height: 100%;
+    background-color: #E2E2B6;
+    border-radius: 0px 5px 5px 0px;
+}
+

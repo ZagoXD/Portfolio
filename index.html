@@ -155,16 +155,18 @@
                     </a>
                 </div>
             </div>
-            <form action="https://formsubmit.co/skyziinxd@gmail.com" method="POST">
+            <form id="contactForm" action="https://api.staticforms.xyz/submit" method="POST">
+                <input type="hidden" name="accessKey" value="0ff6ac6d-95a2-4437-8b9e-3c34c1ce40fe">
                 <input type="text" name="name" placeholder="Seu Nome" required> <br>
-                <input type="text" name="_subject" placeholder="Titulo Email" required> <br>
+                <input type="text" name="subject" placeholder="Titulo Email" required> <br>
                 <input type="email" name="email" placeholder="Email" required> <br>
-                <input type="hidden" name="_captcha" value="false">
                 <textarea name="message" placeholder="Mensagem"></textarea> <br>
+                <p id="successMessage">Email enviado com sucesso!</p>
                 <button type="submit" class="btn" id="btnEnviar">Enviar</button>
             </form>
         </div>
     </section>
+
     <footer>
         <i>Desenvolvido por Gustavo Zago | gustavozago@alunos.utfpr.edu.br</i>
     </footer>
@@ -179,6 +181,24 @@
         $('html, body').animate({
             scrollTop: $("#" + target).offset().top
         }, 800);
+    });
+
+    // Script para enviar formulário e mostrar mensagem de sucesso
+    $("#contactForm").submit(function(event) {
+        event.preventDefault();
+        
+        $.ajax({
+            url: 'https://api.staticforms.xyz/submit',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function() {
+                $("#successMessage").show();
+                $("#contactForm")[0].reset();
+            },
+            error: function() {
+                alert("Ocorreu um erro. Por favor, tente novamente.");
+            }
+        });
     });
 </script>
 </html>

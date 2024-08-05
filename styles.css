@@ -560,3 +560,9 @@ footer{
 .github-link:hover {
     background-color: #555;
 }
+
+#successMessage{
+    display: none;
+    margin-top: 0;
+    color: green;
+}
